@@ -1,0 +1,250 @@
+
+html, body {
+  overflow-x: hidden;
+  }
+body {
+    font-family: $bodytext;
+   
+ }
+
+
+
+ a {
+  color: $primary;
+  &:hover{
+    color: $primary;
+  }
+}
+.scrollspy-example{
+  scroll-behavior: smooth;
+}
+
+
+.nav-link:focus, .nav-link:hover{
+  text-decoration: none;
+}
+
+
+ .accordion-button::after{
+  background-image: url('../images/icons/ic_uparrow.svg');
+ }
+ .accordion-button:not(.collapsed)::after{
+   background-image: url('../images/icons/ic_uparrow.svg');
+ }
+
+ .mandatory{
+  color: #f00;
+ }
+ .error-text{
+   font-size: $small;
+   color: #f00;
+ }
+
+ .sec-bg{
+background-color: $sec-bg;
+}
+.sec-bg-dark{
+  background-color: $sec-bg-dark;
+  }
+
+.grey-bg {
+  background-color: #ebebeb;
+}
+.whitebg-cont {
+  background: $white;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+}
+.arabic-text{
+font-family: $arabicheavy;
+}
+
+
+ /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.maxw-100{
+  max-width: 100%!important;
+}
+hr{color:#ccc;}
+//main{margin-top: 48px; max-width: 960px; margin:0 auto;}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+//Paddings - 36
+.p-36{
+  padding: 36px;
+}
+.px-36{
+  padding-left: 36px;
+  padding-right: 36px;
+}
+.py-36{
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.pt-36{
+  padding-top: 36px;
+}
+.pb-36{
+  padding-bottom: 36px;
+}
+//Paddings - 24
+.py-24{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.pt-24{
+  padding-top: 24px;
+}
+.pb-24{
+  padding-bottom: 24px;
+}
+
+//Paddings - 12
+.py-12{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.pt-12{
+  padding-top: 12px;
+}
+.pb-12{
+  padding-bottom: 12px;
+}
+
+//Paddings - 6
+.py-6{
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.pt-6{
+  padding-top: 6px;
+}
+.pb-6{
+  padding-bottom: 6px;
+}
+
+
+//Marigns - 36
+.my-36{
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.mt-36{
+  margin-top: 36px;
+}
+.mb-36{
+  margin-bottom: 36px;
+}
+
+//Marigns - 24
+.my-24{
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+.mt-24{
+  margin-top: 24px;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+
+//Marigns - 12
+.my-12{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.mt-12{
+  margin-top: 12px;
+}
+.mb-12{
+  margin-bottom: 12px;
+}
+
+
+
+/* UL LI  */
+ul{
+  margin: 0;
+  padding: 0;
+  li{
+    list-style: none;
+  }
+}
+
+
+
+
+.footer-fixed-icons {
+  cursor: pointer;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99999;
+          transition-duration: .8s;
+}
+
+
+
+
+.vbtns-res{
+ 
+.vb-mr-3{
+  margin-right: 16px;
+}
+.vb-mt-3{
+
+}
+}
+
+.table {
+  font-size: 14px;
+  tr{
+    th{
+      color: $primary;
+    }
+  }
+}
+
+
+.form-text-whist{
+  font-size: 12px;
+  color: $primary;
+  text-align: center;
+  line-height: 22px;
+}
+
+
+// Example
+// Apply styles starting from medium devices and up to extra large devices
+@media (min-width: 1200px) {
+
+  .container, .container-lg, .container-md, .container-sm, .container-xl{
+    max-width: 1170px;
+  }
+}
+
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+.vbtns-res{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .vb-mr-3{
+    margin-right: 0px;
+  }
+  .vb-mt-3{
+    margin-top: 16px;
+  }
+  }
+}

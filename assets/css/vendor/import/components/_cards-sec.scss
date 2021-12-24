@@ -1,0 +1,1064 @@
+// /* -------- Login Section Component starts --------- */
+.login-sec {
+    .login-card-cont {
+        padding: 0 10px;
+        transition: all 0.25s;
+        a {
+            text-decoration: none;
+        }
+        .card {
+            display: flex;
+            align-items: center;
+            background: $white;
+            transition: all 0.25s;
+            padding: 30px;
+            border-radius: 10px;
+            border: solid 1px#DFDFE1;
+            text-align: center;
+            height: 100%;
+            h4 {
+                font-family: $bodytext;
+                font-size: 18px;
+            }
+            &:hover {
+                box-shadow: 0px 30px 45px rgba(0, 0, 0, 0.1);
+                .img-cont {
+                    transform: scale(1.1);
+                    transition: all 0.25s;
+                }
+            }
+            .btn-cont {
+                margin-top: auto;
+            }
+            .img-cont {
+                img {
+                    width: 100px;
+                    transition: all 0.25s;
+                }
+            }
+        }
+    }
+}
+// /* --------Login Section Component ends --------- */
+
+// /* --------Reach us Component starts --------- */
+.reachus-sec {
+    .card-cont {
+        padding: 10px;
+        transition: all 0.25s;
+        .card {
+            display: flex;
+            align-items: center;
+            background: $white;
+            transition: all 0.25s;
+            padding: 30px;
+            border-radius: 20px;
+            border: solid 1px#DFDFE1;
+            text-align: center;
+            height: 100%;
+            &:hover {
+                box-shadow: 0px 30px 45px rgba(0, 0, 0, 0.1);
+                .img-cont {
+                    transform: scale(1.1);
+                    transition: all 0.25s;
+                }
+            }
+            .btn-cont {
+                margin-top: auto;
+            }
+            .img-cont {
+                img {
+                    width: 100px;
+                    transition: all 0.25s;
+                }
+            }
+        }
+    }
+}
+// /* --------Reach us Component ends --------- */
+
+// /* My account - services section starts*/
+.services-sec {
+    .service-cont {
+        @extend %cards-cont-properties;
+        .service-card {
+            .card-body {
+                display: flex;
+                flex-direction: column;
+            }
+            width: $card-width-4col;
+            @extend %card-border-hover;
+            &:hover {
+                @extend %cardbox-shadow;
+            }
+            .img-cont {
+                text-align: center;
+                img {
+                    max-width: 100px;
+                }
+            }
+            .img-cont-nojoom {
+                text-align: center;
+                img {
+                    max-width: 140px;
+                }
+            }
+            .service-text {
+                font-size: 18px;
+                font-family: $boldtext;
+            }
+            .service-sup-text {
+                font-size: 14px;
+            }
+        }
+    }
+}
+// /* services section ends*/
+
+// /* My account - partners section starts*/
+.nojoom-partners-sec {
+    .partners-cont {
+        @extend %cards-cont-properties;
+        .partners-card {
+            .card-body {
+                display: flex;
+                flex-direction: column;
+            }
+            width: $card-width-5col;
+            @extend %card-border-hover;
+            &:hover {
+                @extend %cardbox-shadow;
+            }
+            .img-cont {
+                text-align: center;
+                img {
+                    max-width: 100px;
+                }
+            }
+            .img-cont-nojoom {
+                text-align: center;
+                img {
+                    max-width: 140px;
+                }
+            }
+            .service-text {
+                font-size: 18px;
+                font-family: $boldtext;
+                color: $secondary;
+                text-decoration: none;
+                /* &:hover {
+                    color: $primary;
+                } */
+            }
+        }
+    }
+}
+// /*  My account - partners section  ends*/
+
+// /* nojoom rewards - benifits section starts*/
+.nojoom-benifits-sec {
+    .benifits-cont {
+        @extend %cards-cont-properties;
+        .benifits-card {
+            .card-body {
+                display: flex;
+                flex-direction: column;
+            }
+            width: calc(21% - 16px);
+            @extend %card-border-hover;
+            &:hover {
+                @extend %cardbox-shadow;
+            }
+            .img-cont {
+                text-align: center;
+                img {
+                    max-width: 120px;
+                }
+            }
+
+            .service-text {
+                font-size: 16px;
+                font-family: $boldtext;
+                color: $nojoom;
+                text-decoration: none;
+                /* &:hover {
+                    color: $primary;
+                } */
+            }
+        }
+    }
+}
+// /*  nojoom rewards - benifits section  ends*/
+
+// /* nojoom rewards - partners section starts*/
+.nojoompart-sec {
+    .nojoompart-cont {
+        @extend %cards-cont-properties;
+        img {
+            width: $card-width-5col;
+            max-width: 150px;
+            border-radius: 8px;
+            &:hover {
+                @extend %cardbox-shadow;
+            }
+        }
+    }
+    .form-group {
+        .image-box {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            img {
+                width: 100px;
+            }
+        }
+    }
+}
+
+.nojoomplans-image-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    img {
+        width: $card-width-4col;
+        max-width: 200px;
+        border-radius: 8px;
+    }
+}
+// /*   nojoom rewards - partners section  ends*/
+
+// /* Bundles section starts*/
+.bundles-sec {
+    .bundles-cont {
+        @extend %cards-cont-properties;
+        .product-card-bundles {
+            width: $card-width-4col;
+            @extend %card-border-hover;
+            &:hover {
+                @extend %cardbox-shadow;
+            }
+            .card-body {
+                padding-bottom: 20px;
+                .bundle-ul {
+                    li {
+                        margin-bottom: 6px;
+                    }
+                }
+
+                .members-cont {
+                    display: flex;
+                    flex-flow: column wrap;
+                    justify-content: center;
+                    .img-cont {
+                        margin: 8px auto 16px;
+                        img {
+                            overflow: hidden;
+                            border-radius: 10px;
+                            width: 150px;
+                            height: 180px;
+                            object-fit: contain;
+                        }
+                    }
+                    .name-cont {
+                        text-align: center;
+                        .name {
+                            font-family: $boldtext;
+                            margin-bottom: 8px;
+                        }
+                        .designation {
+                            font-size: 14px;
+                            color: $primary;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// /* Bundles section ends */
+
+// /*shamel-benifits section starts*/
+.shamel-benifits-sec {
+    .shamel-benifits-cont {
+        @extend %cards-cont-properties;
+        .product-card-bundles {
+            width: $card-width-4col;
+            @extend %card-border-hover;
+            &:hover {
+                @extend %cardbox-shadow;
+            }
+            .card-body {
+                padding-bottom: 20px;
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                flex-direction: row;
+                .shamel-benifits-img {
+                    max-width: 80px;
+                }
+            }
+        }
+    }
+    .shamel-benifits-text {
+        font-size: 14px;
+        margin-top: 16px;
+        margin-bottom: 0;
+        span {
+            font-size: 18px;
+            color: $primary;
+        }
+    }
+}
+// /* shamel-benifits section ends */
+
+// /* ana offer section - product-card-anaoffer card  starts*/
+.product-card-anaoffer {
+    @extend %card-border;
+    overflow: hidden;
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        .anatitle {
+            color: $secondary;
+            margin-bottom: 16px;
+            font-size: 16px;
+            text-align: center;
+        }
+        .bundle-ul {
+            li {
+                margin-bottom: 12px;
+                label {
+                    font-size: 14px;
+                    display: flex;
+                    gap: 16px;
+                    align-items: flex-start;
+                    line-height: 30px;
+                    .text-decoration-line-through {
+                        color: $dark-gray;
+                    }
+                }
+            }
+        }
+    }
+    .priceinfo-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $primary;
+        padding: 0.5rem 1rem;
+        .priceinfo {
+            color: $white;
+            margin: 0;
+            font-size: 16px;
+            margin-top: auto;
+            .price {
+                font-size: 24px;
+                margin: 0 4px;
+                font-family: $boldtext;
+            }
+        }
+    }
+
+    .priceinfo-cont-dual {
+        display: flex;
+        gap: 0px;
+        background-color: $primary;
+        flex-direction: column;
+        padding: 0.5rem 1rem;
+        .priceinfo-small {
+            color: $white;
+            margin: 0;
+            font-size: 12px;
+            margin-top: auto;
+            min-height: 26px;
+            .price {
+                font-size: 18px;
+                margin: 0 4px;
+                font-family: $boldtext;
+            }
+        }
+
+        .price-btn-cont {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $primary;
+            .priceinfo {
+                color: $white;
+                margin: 0;
+                font-size: 16px;
+                margin-top: auto;
+                .price {
+                    font-size: 24px;
+                    margin: 0 4px;
+                    font-family: $boldtext;
+                }
+            }
+        }
+    }
+    .btn-ooredoo-outline-primary {
+        &:hover {
+            border-color: $white;
+        }
+    }
+}
+// /* ana offer section - product-card-anaoffer card  ends*/
+// /* ana offer section starts */
+.anaoffer-sec {
+    .anaoffer-cont {
+        @extend %cards-cont-properties;
+        .product-card-anaoffer {
+            width: calc(33% - 10px);
+            &:hover {
+                @extend %cardbox-shadow;
+            }
+        }
+    }
+}
+// /* ana offer section ends */
+
+// /* Nokhba-Benefits section starts */
+.Nokhba-Benefits-sec {
+    background-color: $secondary;
+    .albenifits-bundles-cont {
+        @extend %cards-cont-properties;
+        .albenifits-bundles {
+            @extend %card-border-hover;
+            width: $card-width-5col;
+            cursor: pointer;
+            &:hover {
+                @extend %cardbox-shadow;
+                .card-body {
+                    h4 {
+                        color: $primary;
+                    }
+                }
+            }
+            .card-body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .img-cont {
+                    img {
+                        max-width: 120px;
+                    }
+                }
+            }
+        }
+    }
+}
+// /* Nokhba-Benefits section ends */
+
+/*how it works section starts */
+.how_it_works {
+    .staps {
+        .imageBox {
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 0;
+            position: relative;
+            background: #ffffff;
+            width: 200px;
+            height: 200px;
+            border: solid 1px #dadada;
+            text-align: center;
+            &:after {
+                position: absolute;
+                content: "";
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                border-radius: 50%;
+                border: 7px solid transparent;
+                transform: rotate(-45deg);
+            }
+            img {
+                padding-top: 30px;
+            }
+        }
+        .sup-text {
+            width: $card-width;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+
+    .staps > div:nth-child(2) .imageBox:after {
+    }
+    .staps > div:nth-child(3) .imageBox:after {
+    }
+    .staps > div:nth-child(4) .imageBox:after {
+    }
+
+    .step-no {
+        width: 50px;
+        height: 50px;
+        background-color: $primary;
+        position: absolute;
+        border-radius: 50%;
+        color: $white;
+        font-size: 23px;
+        line-height: 46px;
+        margin: 10px 0px 0 0px;
+    }
+}
+
+/*how it works section ends */
+
+/* reports section starts */
+.reports-sec {
+    .reports-cont {
+        .reports-cont-ul {
+            column-count: 4;
+            li {
+                margin-bottom: 8px;
+                a {
+                    color: $secondary;
+                }
+            }
+        }
+        .grid-columns {
+            .red-txt,
+            h3 {
+                font-size: 16px;
+                font-family: $boldtext;
+                margin-bottom: 16px;
+                color: $primary;
+            }
+            ul {
+                margin-bottom: 24px;
+                li {
+                    list-style: disc;
+                    margin-bottom: 8px;
+                    margin-left: 16px;
+                    a {
+                        color: $secondary;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* reports section ends */
+
+.Kiosks-main-section {
+    .links-cont {
+        display: flex;
+        justify-content: center;
+        .nav-link {
+            font-family: $headding;
+            border-bottom: 2px solid #ccc;
+            border-radius: 0;
+            width: 150px;
+            text-align: center;
+            color: $secondary;
+            font-size: 16px;
+            &.active {
+                background-color: $white;
+                color: $primary;
+                border-bottom: 2px solid $primary;
+            }
+        }
+    }
+}
+.kiosk-cont {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    .kiosk {
+        img {
+            width: 24px;
+        }
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+.location-view-cont {
+    .location-cont {
+        padding: 0 16px;
+        .divmainrecord {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 16px;
+            .spanrecord1 {
+                width: calc(100% - 140px);
+                display: flex;
+                img {
+                    width: 32px;
+                    margin-right: 10px;
+                }
+                .na{margin-top: 3px;}
+            }
+
+            .spanrecord2 {
+                width: 110px;
+            }
+
+            
+            .spanrecord4{
+                width: 140px;
+                font-size: 14px;
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .staps > div:nth-child(4) .imageBox:before {
+        position: absolute;
+        content: "";
+        right: 95%;
+        top: 0;
+        width: 200px;
+        bottom: 0;
+        background: url("../images/line-1.png") no-repeat center/60% auto;
+    }
+    .staps > div:nth-child(3) .imageBox:before {
+        position: absolute;
+        content: "";
+        right: 95%;
+        top: 0;
+        width: 200px;
+        bottom: 0;
+        background: url("../images/line-1.png") no-repeat center/60% auto;
+    }
+    .staps > div:nth-child(2) .imageBox:before {
+        position: absolute;
+        content: "";
+        right: 95%;
+        top: 0;
+        width: 200px;
+        bottom: 0;
+        background: url("../images/line-1.png") no-repeat center/60% auto;
+    }
+
+    .sec-img-bod .head {
+        margin-top: 30px;
+    }
+}
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    // /* services section starts*/
+    .services-sec {
+        .service-cont {
+            .service-card {
+            }
+        }
+    }
+    // /* services section ends*/
+
+    // /* Bundles section  starts*/
+    .bundles-sec {
+        .bundles-cont {
+            .product-card-bundles {
+                width: $card-width-3col;
+            }
+        }
+    }
+    // /* Bundles section  ends*/
+
+    // /*shamel-benifits section starts*/
+    .shamel-benifits-sec {
+        .shamel-benifits-cont {
+            .product-card-bundles {
+                width: $card-width-3col;
+            }
+        }
+    }
+    // /* shamel-benifits section ends */
+
+    // /* Nokhba-Benefits section starts */
+    .Nokhba-Benefits-sec {
+        .albenifits-bundles-cont {
+            flex-wrap: wrap;
+            .albenifits-bundles {
+                width: $card-width-3col;
+            }
+        }
+    }
+    // /* Nokhba-Benefits section ends */
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    // /* services section starts*/
+    .services-sec {
+        .service-cont {
+            .service-card {
+                width: calc(50% - 10px);
+            }
+        }
+    }
+    // /* services section ends*/
+
+    // /* My account - partners section starts*/
+    .nojoom-partners-sec {
+        .partners-cont {
+            .partners-card {
+                width: $card-width-3col;
+            }
+        }
+    }
+    // /*  My account - partners section  ends*/
+
+    // /* nojoom rewards - benifits section starts*/
+    .nojoom-benifits-sec {
+        .benifits-cont {
+            .benifits-card {
+                width: calc(33% - 16px);
+            }
+        }
+    }
+    // /*  nojoom rewards - benifits section  ends*/
+
+    // /* nojoom rewards - partners section starts*/
+    .nojoompart-sec {
+        .nojoompart-cont {
+            img {
+                width: calc(25% - 16px);
+            }
+        }
+    }
+    // /*   nojoom rewards - partners section  ends*/
+
+    // /* Bundles section  starts*/
+    .bundles-sec {
+        .bundles-cont {
+            .product-card-bundles {
+                width: $card-width-2col;
+            }
+        }
+    }
+    // /* Bundles section  ends*/
+    // /*shamel-benifits section starts*/
+    .shamel-benifits-sec {
+        .shamel-benifits-cont {
+            .product-card-bundles {
+                width: $card-width-2col;
+            }
+        }
+    }
+    // /* shamel-benifits section ends */
+
+    // /* ana offer section starts*/
+    .anaoffer-sec {
+        .anaoffer-cont {
+            .product-card-anaoffer {
+                width: $card-width-2col;
+            }
+        }
+    }
+    // /* ana offer section ends*/
+
+    // /* Nokhba-Benefits section starts */
+    .Nokhba-Benefits-sec {
+        .albenifits-bundles-cont {
+            .albenifits-bundles {
+                width: $card-width-2col;
+            }
+        }
+    }
+    // /* Nokhba-Benefits section ends */
+
+    /* reports section starts */
+    .reports-sec {
+        .reports-cont {
+            .reports-cont-ul {
+                column-count: 3;
+            }
+        }
+    }
+    /* reports section ends */
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    .kiosk-cont {
+        flex-direction: column;
+        gap: 0;
+    }
+    // /* -------- Login Section Component starts --------- */
+    .login-sec {
+        .p-36 {
+            padding: 24px;
+        }
+        .login-card-cont {
+            padding: 0 10px 24px;
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+    }
+    // /* --------Login Section Component ends --------- */
+    // /* --------Reach us Component starts --------- */
+    .reachus-sec .card-cont {
+        padding-bottom: 0;
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    // /* --------Reach us Component ends --------- */
+
+    // /* My account - partners section starts*/
+    .nojoom-partners-sec {
+        .partners-cont {
+            .partners-card {
+                width: $card-width-2col;
+            }
+        }
+    }
+    // /*  My account - partners section  ends*/
+    // /* nojoom rewards - benifits section starts*/
+    .nojoom-benifits-sec {
+        .benifits-cont {
+            .benifits-card {
+                width: calc(50% - 16px);
+            }
+        }
+    }
+    // /*  nojoom rewards - benifits section  ends*/
+
+    // /* nojoom rewards - partners section starts*/
+    .nojoompart-sec {
+        .nojoompart-cont {
+            img {
+                width: calc(33% - 16px);
+            }
+        }
+    }
+
+    .nojoomplans-image-box {
+        img {
+            width: calc(50% - 16px);
+        }
+    }
+    // /*   nojoom rewards - partners section  ends*/
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    // /* --------Reach us Component starts --------- */
+    .reachus-sec {
+        .card-cont {
+            margin-bottom: 0px;
+            max-width: $card-max-width;
+            .row > * {
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+        }
+    }
+
+    .shamel-benifits-sec .shamel-benifits-text,
+    .anaoffer-sec .text-desc {
+        width: calc(100% - 8px);
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center;
+    }
+
+    /* reports section start */
+    .reports-sec {
+        .reports-cont {
+            .reports-cont-ul {
+                column-count: 2;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    /* reports section ends */
+}
+// /* --------Reach us Component ends --------- */
+// 568 below ios se landscape
+@media (max-width: 567.98px) {
+    // /* --------Reach us Component starts --------- */
+    .reachus-sec {
+        .card-cont {
+            margin-bottom: 0px;
+            max-width: $card-max-width;
+
+            .card {
+                height: auto;
+                margin: 0 auto 16px;
+            }
+            &:last-child {
+                .card {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    //  /* --------Reach us Component ends --------- */
+
+    // /* services section starts*/
+    .services-sec {
+        .service-cont {
+            .service-card {
+                width: $card-width;
+                max-width: $card-max-width;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    // /* services section ends*/
+
+    // /* My account - partners section starts*/
+    .nojoom-partners-sec {
+        .partners-cont {
+            .partners-card {
+                width: $card-width;
+                max-width: $card-max-width;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    // /*  My account - partners section  ends*/
+
+    // /* nojoom rewards - partners section starts*/
+    .nojoompart-sec {
+        .nojoompart-cont {
+            max-width: $card-max-width;
+            margin-right: auto;
+            margin-left: auto;
+            img {
+                width: $card-width-2col;
+            }
+        }
+    }
+    // /*   nojoom rewards - partners section  ends*/
+    /* Bundles section  starts*/
+    .bundles-sec {
+        .bundles-cont {
+            .product-card-bundles {
+                width: $card-width;
+                max-width: $card-max-width;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    /* Bundles section  ends*/
+    // /*shamel-benifits section starts*/
+    .shamel-benifits-sec {
+        .shamel-benifits-cont {
+            .product-card-bundles {
+                width: $card-width;
+                max-width: $card-max-width;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    // /* shamel-benifits section ends */
+
+    /* ana offer section starts*/
+    .anaoffer-sec {
+        .anaoffer-cont {
+            .product-card-anaoffer {
+                width: $card-width;
+                max-width: $card-max-width;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    /* ana offer section ends*/
+
+    /* Nokhba-Benefits section starts */
+    .Nokhba-Benefits-sec {
+        .albenifits-bundles-cont {
+            .albenifits-bundles {
+                width: $card-width;
+                max-width: 300px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+
+    /* Nokhba-Benefits section ends */
+}
+
+@media (max-width: 320px) {
+    // /* services section starts*/
+    .services-sec {
+        .service-cont {
+            .service-card {
+                width: calc(100%);
+            }
+        }
+    }
+    // /* services section ends*/
+    // /* My account - partners section starts*/
+    .nojoom-partners-sec {
+        .partners-cont {
+            .partners-card {
+                width: calc(100%);
+            }
+        }
+    }
+    // /*  My account - partners section  ends*/
+    .nojoompart-sec .form-group .image-box {
+        gap: 10px;
+        img {
+            width: 82px;
+        }
+    }
+
+    .nojoomplans-image-box {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+
+    // /* nojoom rewards - benifits section starts*/
+    .nojoom-benifits-sec {
+        .benifits-cont {
+            .benifits-card {
+                width: $card-width;
+                max-width: $card-max-width;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    // /*  nojoom rewards - benifits section  ends*/
+    .reports-sec {
+        .reports-cont {
+            .reports-cont-ul {
+                column-count: 1;
+                width: $card-width;
+                max-width: $card-max-width;
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+    }
+    /* reports section ends */
+}

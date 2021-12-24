@@ -1,0 +1,70 @@
+h1,.h1,h2,.h2,h3,.h3,h4,.h4,h5,.h5,h6,.h6 {
+  font-family: $headding;
+  margin: 0;
+  padding: 0;
+}
+
+%bodytext16 {
+  font-family: $bodytext;
+  font-size: $medium;
+  font-style: normal;
+}
+.text-secondary {
+  color: $color-black !important;
+}
+.bodytext16 {
+  font-family: $bodytext;
+  font-size: $medium;
+  font-style: normal;
+}
+.bodytext14 {
+  font-family: $bodytext;
+  font-size: $small;
+  font-style: normal;
+}
+.bodytext12 {
+  font-family: $bodytext;
+  font-size: $x-small;
+  font-style: normal;
+}
+h1,
+.h1 {
+  font-size: $xxxx-large;
+}
+h2,
+.h2 {
+  font-size: $xxx-large;
+}
+h3,
+.h3 {
+  font-size: $xx-large;
+}
+h4,
+.h4 {
+ 
+  font-size:$x-large;
+}
+h5,
+.h5 {
+  font-size: $medium;
+}
+h6,
+.h6 {
+  font-size: $small;
+}
+
+@media (max-width: 767.98px) {
+h1,
+.h1 {
+  font-size: $xxx-large;
+}
+h2,
+.h2 {
+  font-size: $xx-large;
+}
+h3,
+.h3 {
+  font-size: $x-large;
+}
+
+}

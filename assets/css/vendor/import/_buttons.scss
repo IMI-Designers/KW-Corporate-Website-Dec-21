@@ -1,0 +1,284 @@
+//buttons
+/* 
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
+.btn:hover {
+  color: #212529;
+}
+.btn-check:focus + .btn, .btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+.btn:disabled, .btn.disabled, fieldset:disabled .btn {
+  pointer-events: none;
+  opacity: 0.65;
+} */
+
+.btn {
+  border-radius: 50px;
+  padding: 5px 25px;
+  min-width: 100px;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+//primary Button
+.btn-primary {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
+  font-family: $headding;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 26px;
+  &.disabled {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary-hover;
+    background-color: $white;
+    border-color: $primary-hover;
+    box-shadow: none;
+  }
+}
+
+//primary outline Button
+.btn-outline-primary {
+  color: $primary;
+  background-color: $white;
+  border-color: $primary;
+  font-family: $headding;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 26px;
+  &.disabled {
+    color: $primary;
+    background-color: $white;
+    border-color: $primary;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: none;
+  }
+}
+
+//secondary  Button
+.btn-secondary {
+  color: $white;
+  background-color: $secondary;
+  border-color: $secondary;
+  font-family: $headding;
+  font-size: 12px;
+  line-height: 26px;
+  &.disabled {
+    color: $white;
+    background-color: $secondary;
+    border-color: $secondary;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $secondary;
+    background-color: $white;
+    border-color: $secondary;
+    box-shadow: none;
+  }
+}
+
+//secondary outline Button
+.btn-outline-secondary {
+  color: $secondary;
+  background-color: $white;
+  border-color: $secondary;
+  font-family: $headding;
+  font-size: 12px;
+  line-height: 26px;
+  &.disabled {
+    color: $secondary;
+    background-color: $white;
+    border-color: $secondary;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $secondary;
+    border-color: $secondary;
+    box-shadow: none;
+  }
+}
+
+//primary outline Button
+.btn-ooredoo-primary {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
+  font-family: $bodytext;
+  font-size: 16px;
+  line-height: 26px;
+  min-width: 200px;
+  &.disabled {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $primary;
+    background-color: $white;
+    border-color: $primary;
+    box-shadow: none;
+  }
+}
+//primary outline Button
+.btn-ooredoo-outline-primary {
+  color: $primary;
+  background-color: $white;
+  border-color: $primary;
+  font-family: $bodytext;
+  font-size: 16px;
+  line-height: 26px;
+  min-width: 200px;
+  &.disabled {
+    color: $primary;
+    background-color: $white;
+    border-color: $primary;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $primary;
+    border-color: $primary;
+    box-shadow: none;
+  }
+}
+
+//secondary outline Button
+.btn-ooredoo-secondary {
+  color: $secondary;
+  background-color: $white;
+  border-color: $secondary;
+  font-family: $bodytext;
+  font-size: 16px;
+  line-height: 26px;
+  min-width: 200px;
+  &.disabled {
+    color: $secondary;
+    background-color: $white;
+    border-color: $secondary;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: $secondary;
+    border-color: $secondary;
+    box-shadow: none;
+  }
+}
+
+.btn-link {
+  color: $primary;
+  &:hover {
+    color: $primary;
+    text-decoration: underline;
+  }
+}
+
+.btn-number {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 5px;
+  min-width: 180px;
+  text-align: left;
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+//wana Button
+.btn-wana {
+  color: $secondary;
+  background-color: $wana;
+  border-color: $wana;
+  font-size: 12px;
+  line-height: 26px;
+  font-family: $boldtext;
+  &.disabled {
+    color: $secondary;
+    background-color: $wana;
+    border-color: $wana;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $secondary;
+    background-color: $wana-hover;
+    border-color: $wana-hover;
+  }
+}
+//----------------------------------
+
+.link-arrow {
+  font-family: $headding;
+  text-decoration: none;
+  color: $primary;
+  padding: 0;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+//----------------------------------
+
+.btn-sm {
+  padding: 5px 20px;
+  line-height: 20px;
+  min-width: 100px;
+  font-size: 14px;
+}
+
+.btn-lg {
+  padding: 10px 20px;
+  line-height: 20px;
+  font-size: 16px;
+  min-width: 120px;
+}

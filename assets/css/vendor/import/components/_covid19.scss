@@ -1,0 +1,144 @@
+/*  covid19 Section Starts  */
+.covid19-sec {
+    background-color: #e8eaeb;
+    .covid-cards-cont {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 20px;
+
+        .covid-card {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            width: $card-width-3col;
+            border-radius: 10px;
+            border: solid 2px transparent;
+
+            .covid-card-link {
+                display: block;
+                height: 100%;
+                color: $secondary;
+                text-decoration: none;
+                padding: 20px;
+                &:hover {
+                    text-decoration: none;
+                }
+                .covid-more-arrow {
+                    display: none;
+                }
+            }
+            .img-cont {
+                img {
+                    width: 64px;
+                }
+            }
+            &:hover {
+                border: solid 2px $primary;
+            }
+        }
+    }
+}
+/*  covid19 Section ends  */
+
+/*  covid19-desc Section Starts  */
+.covid-desc-sec {
+    .covid-desc-cont {
+        background-color: $primary;
+        padding: 16px 22px;
+        border-radius: 10px;
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        .img-cont {
+            margin-bottom: auto;
+            img {
+                width: 50px;
+            }
+        }
+        h4 {
+            color: $white;
+        }
+    }
+
+    .covid-desc-text {
+        height: 172px;
+        overflow: hidden;
+        &.covid-desc-text3{
+            height: 172px;
+        }
+    }
+    .covid-services-sec {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 24px;
+        .covid-img-cont {
+            width: calc(50% - 12px);
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .btn-cont {
+        .btn-sm {
+            width: 140px;
+            margin: 0 auto;
+        }
+    }
+}
+/*  covid19-desc Section ends  */
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    /*  covid19 Section Starts  */
+    .covid19-sec {
+        .covid-cards-cont {
+            .covid-card {
+                width: $card-width-2col;
+            }
+        }
+    }
+    /*  covid19 Section ends  */
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+// /* --------Reach us Component ends --------- */
+// 568 below ios se landscape
+@media (max-width: 567.98px) {
+    /*  covid19 Section Starts  */
+    .covid19-sec {
+        .covid-cards-cont {
+            .covid-card {
+                width: $card-width;
+                max-width: $card-max-width;
+                margin-right: auto;
+                margin-left: auto;
+                text-align: center;
+                .covid-card-link {
+                    width: 100%;
+                    .covid-more-arrow {
+                        margin-top: 24px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    /*  covid19 Section ends  */
+}
+
+@media (max-width: 320px) {
+}

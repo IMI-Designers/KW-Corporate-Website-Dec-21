@@ -1,0 +1,607 @@
+/* product-card starts*/
+.package-card {
+    @extend %card-border;
+    transition: all 0.25s;
+    overflow: hidden;
+    height: 100%;
+    &:hover {
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+        .img-cont {
+            padding: 1rem;
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .img-cont {
+        padding: 1rem;
+        img {
+            min-height: 150px;
+            transition: all 1s;
+        }
+    }
+    .title-head {
+        padding: 16px;
+        background-color: $primary;
+        color: $white;
+    }
+    .card-body {
+        .package-ul {
+            .detail-li {
+                display: flex;
+                align-items: center;
+                margin-bottom: 16px;
+                gap: 1rem;
+                .icon-cont {
+                    img {
+                        font-size: 48px;
+                        height: 48px;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+/* product-card ends*/
+
+/* product-card starts*/
+.product-card {
+    @extend %card-border;
+    transition: all 0.25s;
+    &:hover {
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+        .img-cont {
+            padding: 1rem;
+
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+    .img-cont {
+        padding: 1rem;
+        img {
+            min-height: 150px;
+            transition: all 1s;
+        }
+    }
+    .card-body {
+        text-align: center;
+        .card-title {
+            font-family: $boldtext;
+            font-size: $large;
+            color: $secondary;
+            line-height: normal;
+        }
+        .card-text {
+            font-size: $small;
+        }
+        .price-info-cont {
+            color: $primary;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: auto;
+        }
+        .priceinfo {
+            margin: 0;
+            font-size: 16px;
+            color: $primary;
+            .price {
+                font-size: 24px;
+                font-family: $boldtext;
+                margin: 0 4px;
+            }
+        }
+    }
+}
+/* product-card ends*/
+
+/* product-card bundles starts*/
+.product-card-bundles {
+    @extend %card-border;
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        .bundle-ul {
+            li {
+                label {
+                    font-size: 14px;
+                    span {
+                        font-family: $boldtext;
+                        color: $primary;
+                        margin-bottom: 10px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+        .priceinfo {
+            margin: 0;
+            font-size: 16px;
+            color: $primary;
+
+            margin-top: auto;
+            .price {
+                font-size: 24px;
+                margin: 0;
+                font-family: $boldtext;
+            }
+        }
+    }
+}
+/* product-card bundles ends*/
+
+.products-swiper-01,
+.products-swiper-03,
+.products-swiper-04 {
+    .swiper-wrapper {
+        margin-bottom: 42px;
+        height: auto;
+        .swiper-slide {
+            height: auto;
+            padding: 5px;
+            /* max-width: 280px; */
+            .product-card {
+                height: 100%;
+                .card-body {
+                    display: flex;
+                    flex-direction: column;
+                    .priceinfo {
+                        margin-bottom: 16px;
+                    }
+                }
+                &.pro-card-anim {
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background-color: #bbb;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $primary;
+            width: 20px;
+            border-radius: 10px;
+        }
+    }
+    .swiper-horizontal > .swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+    }
+}
+
+/* -------------------- starts ---------------------- */
+
+.evenmore-cont {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    .img-cont {
+        img {
+            max-width: 120px;
+            max-height: 120px;
+        }
+    }
+    .img-cont-small {
+        img {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    h4 {
+        margin: 0;
+    }
+    p {
+        font-size: 14px;
+        margin: 0;
+    }
+    .text-desc {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.benifits-swiper-3col,
+.benifits-swiper-4col,
+.packages-swiper-3col {
+    .swiper-wrapper {
+        margin-bottom: 42px;
+        height: auto;
+        .swiper-slide {
+            height: auto;
+        }
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background-color: #bbb;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $primary;
+            width: 20px;
+            border-radius: 10px;
+        }
+    }
+}
+
+.packages-swiper-3col {
+    .swiper-wrapper {
+        margin-bottom: 42px;
+        height: auto;
+        .swiper-slide {
+            height: auto;
+        }
+    }
+
+    .swiper-pagination {
+        .swiper-pagination-bullet {
+            background-color: #bbb;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $primary;
+            width: 20px;
+            border-radius: 10px;
+        }
+    }
+}
+
+/* -------------------- ends ---------------------- */
+
+/* 4 card Swiper Starts */
+.slides-count4 {
+    .swiper-wrapper {
+        margin-bottom: 42px;
+    }
+}
+.slides-count3,
+.slides-count2,
+.slides-count1 {
+    .swiper-wrapper {
+        justify-content: center;
+        margin-bottom: 42px;
+    }
+}
+/* 4 card Swiper ends */
+
+
+/* Shamel Tabs starts */
+.mt-90{
+    padding-top: 90px;
+}
+.shamel-tabs-section{
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 24px;
+    }
+    .swiper-button-prev, .swiper-rtl .swiper-button-next{
+        left: -5px;
+        background-color: #f0f0f0;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
+        right: -5px;
+        background-color: #f0f0f0;
+    }
+   
+}
+.shamel-tabs-swiper-cont {
+    background-color: $sec-bg-dark;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+    &.active-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+    }
+
+    .list-group-item {
+        border: none;
+        text-align: center;
+        background-color: transparent;
+        padding: 18px 0 14px 0;
+        border-bottom: 4px solid transparent;
+        font-family: $boldtext;
+        font-size: 16px;
+        &.active {
+            color: $primary;
+            border-bottom: 4px solid $primary;
+        }
+    }
+}
+
+
+
+.shamel-tabs-swiper {
+   
+    padding: 0 20px;
+    border-radius: 0;
+    .swiper-wrapper {
+        
+        justify-content: center;
+        &.slides-center{
+            justify-content: center;
+        }
+        
+    }
+    .swiper-slide {
+        width: 90px;
+        &.sw-lg {
+            width: 125px;
+        }
+        &.sw-xl {
+            width: 180px;
+        }
+        &.sw-xxl {
+            width: 200px;
+        }
+        &.sw-xxxl {
+            width: 230px;
+        }
+        &.sw-xxxxl {
+            width: 250px;
+        }
+    }
+
+    .nav-link {
+        border: 1px solid #dfdfdf;
+        color: $secondary;
+        margin: 0;
+        border-radius: 8px;
+        font-size: 14px;
+        text-align: center;
+        &:hover {
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+        &:focus-visible {
+            box-shadow: none;
+            outline-offset: 0px;
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+        &.active {
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+    }
+}
+/* Shamel Tabs ends */
+
+
+
+/* My account Tabs starts */
+
+.myacTabsSwiper {
+    .swiper-wrapper {
+        justify-content: center;
+    }
+    .swiper-slide {
+        width: 110px;
+        &.sw-lg {
+            width: 125px;
+        }
+        &.sw-xl {
+            width: 150px;
+        }
+        &.sw-xxl {
+            width: 175px;
+        }
+        &.sw-xxxl {
+            width:200px;
+        }
+    }
+    .nav-link {
+        border: 1px solid #dfdfdf;
+        color: $secondary;
+        margin: 0;
+        border-radius: 8px;
+        font-size: 14px;
+        text-align: center;
+        &:hover {
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+        &:focus-visible {
+            box-shadow: none;
+            outline-offset: 0px;
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+        &.active {
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+    }
+}
+
+/* My account Tabs ends */
+
+/* faq Tabs starts */
+
+.faq-tabs-swiper-cont {
+    .swiper-wrapper {
+        justify-content: center;
+    }
+    .swiper-slide {
+        width: 110px;
+        &.sw-lg {
+            width: 125px;
+        }
+        &.sw-xl {
+            width: 150px;
+        }
+        &.sw-xxl {
+            width: 175px;
+        }
+    }
+    .nav-link {
+        border: 1px solid #dfdfdf;
+        color: $secondary;
+        margin: 0;
+        border-radius: 8px;
+        font-size: 14px;
+        text-align: center;
+        &:hover {
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+        &:focus-visible {
+            box-shadow: none;
+            outline-offset: 0px;
+            outline: -webkit-focus-ring-color auto 0px;
+        }
+        &.active {
+            background-color: $primary;
+            border-color: $primary;
+            color: $white;
+        }
+    }
+}
+
+/* My account Tabs ends */
+
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+   /* My account Tabs starts */
+    .myacTabsSwiper {
+        .swiper-wrapper {
+            justify-content: start;
+        }
+    }
+    /* My account Tabs ends */
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+    .shamel-tabs-swiper {
+        .swiper-wrapper {
+            &.slides-center{
+                justify-content: start;
+            }
+        }
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+    /* 4 card Swiper Starts */
+    .slides-count4 {
+        .swiper-wrapper {
+            justify-content: start;
+            margin-bottom: 42px;
+        }
+        .swiper-pagination {
+            display: block;
+        }
+    }
+    .slides-count3 {
+        .swiper-wrapper {
+            justify-content: start;
+            margin-bottom: 42px;
+        }
+        .swiper-pagination {
+            display: block;
+        }
+    }
+    /* 4 card Swiper ends */
+}
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+}
+
+// 568 below ios se landscape
+@media (max-width: 567.98px) {
+    .packages-swiper-3col {
+        .swiper-wrapper {
+            margin-bottom: 42px;
+            height: auto;
+            .swiper-slide {
+                height: auto;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    .products-swiper-01,
+    .products-swiper-03,
+    .products-swiper-04 {
+        .swiper-wrapper {
+            .swiper-slide {
+                padding: 0 20px;
+                .product-card {
+                    max-width: $card-max-width;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    /* 4 card Swiper Starts */
+    .slides-count3 {
+        .swiper-wrapper {
+            justify-content: start;
+            margin-bottom: 42px;
+        }
+
+        .swiper-pagination {
+            display: block;
+        }
+    }
+
+    .slides-count2 {
+        .swiper-wrapper {
+            justify-content: start;
+            margin-bottom: 42px;
+        }
+        .swiper-pagination {
+            display: block;
+        }
+    }
+
+    .slides-count1 {
+        .swiper-wrapper {
+            justify-content: center;
+            margin-bottom: 42px;
+        }
+        .swiper-pagination {
+            display: none;
+        }
+    }
+    /* 4 card Swiper ends */
+
+    .product-card {
+        .img-cont {
+            img {
+                min-height: 120px;
+            }
+        }
+    }
+
+    .evenmore-cont {
+        .img-cont {
+            img {
+                width: 84%;
+            }
+        }
+    }
+}

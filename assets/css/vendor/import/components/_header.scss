@@ -1,0 +1,510 @@
+
+
+
+.globalnav-sec {
+    background-color: $secondary;
+    padding: 8px 0;
+    .global-nav-cont {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                list-style: none;
+                display: inline;
+                .myacc-dropdown{
+                    padding: 10px 0;
+                    li{
+                        a{
+                            color: $secondary;
+                            display: block;
+                            padding: 10px;
+                        }
+                    }
+                }
+                a {
+                    display: inline-block;
+                    color: $white;
+                    font-size: 14px;
+                    line-height: 14px;
+                    text-decoration: none;
+                    border-right: 1px solid #fff;
+                    position: relative;
+                    &.dropdown-toggle::after{
+                        display: none;
+                    }
+                    &:hover {
+                        color: $white;
+                    }
+                    &.active {
+                        color: $primary;
+                        font-family: $boldtext;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            height: 15px;
+                            background: #fff;
+                            width: 15px;
+                            border: 0px;
+                            left: 0px;
+                            right: 0;
+                            display: block;
+                            bottom: -28px;
+                            clear: left;
+                            transform: rotate(45deg);
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+        .gl-leftnav {
+            ul {
+                li {
+                    &:last-child {
+                        a {
+                            border: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .gl-rightnav {
+            .ar-text {
+                color: $primary;
+                font-size: 16px;
+            }
+            a {
+                border: 0;
+            }
+        }
+    }
+}
+
+
+
+/* ----------- Header ---------- */
+.main-navigation {
+    box-shadow: 0 10px 10px -10px #ccc;
+    position: relative;
+    z-index: 2;
+    header {
+        background-color: $white;
+    }
+    .navbar-brand{
+        padding: 0;
+    }
+    .ooredoo-logo {
+        height:40px;
+    }
+    .navbar {
+        padding: 14px 0;
+        position: relative;
+        flex-wrap: wrap;
+    }
+    .nav-cont {
+        position: relative;
+    }
+    .mega-dropdown-menu {
+        width: 100%;
+        border: 0;
+        border-radius: 0;
+        margin: 0;
+        padding: 0;
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
+    }
+    .navbar-nav {
+        .nav-item {
+            position: static;
+            .nav-link {
+                font-family: $headding;
+                font-size: $large;
+                color: $secondary;
+                padding-right: 16px;
+                padding-left: 16px;
+                position: relative;
+                line-height: 32px;
+                &::after {
+                    display: none;
+                }
+                &.show {
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 5px;
+                        background: $primary;
+                        width: 45px;
+                        border: 0px;
+                        left: 0px;
+                        right: 0;
+                        display: block;
+                        bottom: -5px;
+                        margin: 0 auto;
+                        border-radius: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .vtab-cont {
+        .vtab-leftnav {
+            background-color: #f5f5f5;
+            padding: 30px 0;
+            .nav-link {
+                background-color: transparent;
+                border-radius: 0;
+                font-family: $bodytext;
+                font-size: $medium;
+                min-width: 180px;
+                text-align: left;
+                margin-left: 4px;
+                &.active {
+                    background-color: $white;
+                    color: $primary;
+                    font-family: $boldtext;
+                }
+            }
+        }
+        .vtab-rightnav {
+            width: 100%;
+            padding-top: 16px;
+
+            .img-bod-cat {
+                border-radius: 4px;
+                border: 1px solid #e3e5f1;
+                margin-right: 16px;
+                margin-bottom: 16px;
+                text-align: center;
+                padding: 10px;
+                a {
+                    color: $primary;
+                    display: inline-block;
+                    text-decoration: none;
+                    font-size: 14px;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+            .img-bod-cat img {
+                width: 75%;
+                margin-top: auto;
+            }
+        }
+    }
+}
+
+/* Mobile menu */
+
+/* mobile menu */
+.gmobile_menu {
+    width: 100%;
+    clear: both;
+    flex-direction: column;
+    overflow: scroll;
+    position: relative;
+
+    .mxnu li a {
+        font-size: 16px;
+        font-family: $bodytext;
+        font-weight: normal;
+        position: relative;
+        display: block;
+        padding: 0.5rem 1.25rem;
+        color: $secondary;
+        text-decoration: none;
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: 16px;
+            top: 10px;
+            background-image: url(#{$service-assetPath}footer-right.svg);
+            background-repeat: no-repeat;
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .accordion-item {
+        border: 0;
+    }
+
+    .accordion-flush {
+        .accordion-item {
+            .accordion-button {
+                font-size: 18px;
+                border-bottom: 1px solid #ccc;
+            }
+        }
+    }
+
+    .gmobile_menu .accordion-body .accordion-flush .accordion-collapse .accordion-button {
+        border: 0;
+    }
+
+    #accordionExample {
+        .accordion-item {
+            .accordion-header {
+                .accordion-button {
+                    border: 0;
+                    box-shadow: none;
+                }
+            }
+            &:last-child {
+                .accordion-header {
+                    .accordion-button {
+                        border-top: 0px solid #aaa;
+                    }
+                }
+            }
+        }
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: $primary;
+        background-color: #fff;
+    }
+    .accordion-button:focus {
+        box-shadow: none;
+        border-color: $secondary;
+    }
+    .accordion-body {
+        padding: 0;
+    }
+}
+.gmobile_menu .qui-pay {
+    display: block;
+    color: #221e20;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-decoration: none;
+    font-family: $headding;
+    padding: 16px;
+    background: #f5f5f5;
+}
+.gmobile_menu .qui-pay a {
+    color: #221e20;
+    text-decoration: none;
+}
+.gmobile_menu .panel-title > a,
+.gmobile_menu .panel-title > a:active {
+    display: block;
+    color: #221e20;
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-decoration: none;
+    font-family: $headding;
+}
+.gmobile_menu .active .panel-title > a,
+.gmobile_menu .panel.panel-default .panel-heading.active .panel-title > a:active {
+    color: #ed1c24;
+}
+.gmobile_menu .panel-heading a:before {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    transition: all 0.5s;
+}
+.gmobile_menu .panel-heading.active a:before {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.gmobile_menu .panel-default > .panel-heading {
+    background-color: #ffffff;
+    border-color: #fff;
+}
+.gmobile_menu .mxnu .dropdown-header {
+    font-size: 14px;
+    font-family: $headding;
+    color: #333f48;
+    padding: 10px 0px;
+}
+
+.gmobile_menu .mxnu li.dropdown-header a:before {
+    font-family: "Glyphicons Halflings";
+    content: "\e114";
+    float: right;
+    transition: all 0.5s;
+    transform: rotate(-90deg);
+    font-weight: lighter;
+    font-size: 11px;
+    color: #ed1c24;
+    display: none;
+}
+.ovrflw_hide {
+    overflow-y: hidden;
+}
+.gmobile_menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .Gn_head .navbar-collapse.collapse {
+        display: none !important;
+    }
+}
+
+/* navbar-collapse collapse show */
+/* Mobile menu Ends */
+
+.navbar-light .navbar-toggler-icon{
+    background-image:url(#{$service-assetPath}burger-menu.svg);
+
+}
+.navbar-light .navbar-toggler-icon.change{
+    background-image:url(#{$service-assetPath}menu-close.svg);
+
+}
+.navbar-light .navbar-toggler{border: 0;}
+.navbar-toggler:focus{box-shadow: none;}
+.navbar-toggler{padding:.25rem .0rem}
+
+
+
+
+
+/* ANA Header starts*/
+
+.ana-header-sec{
+    .navbar-ana-cont{
+       
+        .navbar{
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+        }
+        .navbar-light{
+            .navbar-nav {
+                .nav-link{
+                    font-family: $headding;
+                    color: $secondary;
+                    font-size: large;
+                    &.active{
+                        color: $primary;
+                    }
+                }
+            }
+
+        } 
+
+        .navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center;
+            margin: 0 -12px;
+            padding: 16px;
+            background-color: $white;
+            .nav-link{
+                color: $white;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {
+}
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
+
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+    
+.ana-header-sec{
+    .navbar-ana-cont{
+       
+        .navbar{
+            padding-top:10px;
+            padding-bottom: 10px;
+
+        }
+      
+        .navbar-collapse {
+            flex-basis: 100%;
+            flex-grow: 1;
+            align-items: center;
+            margin: 0 -12px;
+            padding: 16px;
+            background-color: #333f48;
+                margin-top: 10px;
+            
+
+          
+                .navbar-nav {
+                    .nav-link{
+                        color: $white;
+                        font-size: large;
+                        &.active{
+                            color: $primary;
+                        }
+                    }
+                }
+    
+            
+
+            
+            
+        }
+    }
+}
+
+  
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+
+
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 567.98px) {
+    .main-navigation {
+        .navbar {
+            padding: 10px 0;
+            .ooredoo-logo {
+                height: 32px;
+                
+            }
+        }
+    }
+}
+
+
+// `xs` returns only a ruleset and no media query
+// ... { ... }
+
+// Android 375
+@media (max-width: 375px) {
+}
+// Android 360
+@media (max-width: 360px) {
+}
+// ios 320
+@media (max-width: 320px) {
+    .starterpackitem ul li {
+        font-size: 12px;
+        span {
+            font-size: 20px;
+        }
+    }
+}

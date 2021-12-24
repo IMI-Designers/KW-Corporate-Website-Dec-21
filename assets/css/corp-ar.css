@@ -1,0 +1,164 @@
+body {
+  font-family: "OoredooArabic", "NotoRegular", Arial, Helvetica, sans-serif;
+  text-align: right;
+}
+
+.globalnav-sec .global-nav-cont ul li a {
+  border-right: 0;
+  border-left: 1px solid #fff;
+}
+
+.mini-sitemap .col {
+  float: right;
+  padding: 5px 25px 20px 0px;
+  border-left: 0;
+  border-right: 1px solid #bfbab8;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "OoredooArabic-Heavy", "ooredoo-heavy", "NotoRegular", Arial,
+    Helvetica, sans-serif;
+  line-height: normal;
+}
+
+.btn {
+  font-family: "OoredooArabic", "NotoRegular", Arial, Helvetica, sans-serif;
+}
+
+.reachus-sec h3 {
+  margin-bottom: 6px;
+}
+.arabic-text {
+  font-family: "NotoRegular";
+}
+
+.hedding-cont .hero-hedding,
+.hero-hedding-sec h1 {
+  margin-bottom: -24px !important;
+}
+
+.main-navigation .vtab-cont .vtab-leftnav .nav-link {
+  margin-left: 0;
+  margin-right: 4px;
+}
+.main-navigation .navbar-nav .nav-item .nav-link,
+.gmobile_menu .qui-pay {
+  font-family: "OoredooArabic-Heavy", "ooredoo-heavy", "NotoRegular", Arial,
+    Helvetica, sans-serif;
+}
+.main-navigation .navbar-nav .nav-item .nav-link {
+  padding-top: 16px;
+  padding-bottom: 0;
+}
+.main-navigation .vtab-cont .vtab-leftnav .nav-link,
+.main-navigation .vtab-cont .vtab-leftnav .nav-link.active {
+  font-family: "OoredooArabic", "NotoRegular", Arial, Helvetica, sans-serif;
+}
+.globalnav-sec .global-nav-cont ul li a.active {
+  font-family: "OoredooArabic-Bold";
+}
+.globalnav-sec .global-nav-cont ul li .myacc-dropdown li a {
+  text-align: left;
+}
+
+.gmobile_menu .mxnu li a:after {
+  transform: rotate(180deg);
+  left: 16px;
+  right: auto;
+}
+.form-floating > .form-control {
+  text-align: right;
+}
+.login-sec .form-cont .view-pwd {
+  left: 0;
+  right: auto;
+}
+
+[type="email"],
+[type="number"],
+[type="tel"],
+[type="url"] {
+  text-align: right;
+}
+.form-check {
+  margin-right: 0;
+}
+.login-sec .form-cont .selectopt-btn-cont .form-radio-cont .form-check {
+  padding-right: 0;
+}
+
+.sel-number-cont
+  .sel-number
+  .sel-num-dropdown
+  .sel-num-dropdown-menu
+  .sel-num-ul
+  li
+  .no-cont
+  .cus-switch {
+  margin-right: auto;
+  margin-left: 0;
+}
+.hero-hedding-sec .back-cont svg {
+  transform: rotate(180deg);
+}
+.profile-form-cont .address-added-cont,
+.profile-form-cont .addaddress-cont {
+  border-left: 1px solid #e0e0e0;
+  border-right: 0;
+}
+.profile-form-cont .address-added-cont .address-check-cont {
+  margin-right: 0;
+  margin-left: 24px;
+}
+@media (max-width: 1199.98px) {
+  .profile-form-cont .captha-btn-cont .captha-cont .captha-holder img {
+    height: 40px;
+  }
+
+  .mini-sitemap {
+    padding: 5px 0;
+    margin: 0;
+  }
+  .mini-sitemap .col {
+    float: none;
+    display: block;
+    padding: 0;
+    width: 100%;
+    border: 0;
+  }
+  .mini-sitemap .col h4:after {
+    right: auto;
+    left: 10px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .profile-form-cont .address-added-cont,
+  .profile-form-cont .addaddress-cont {
+    border: 0;
+  }
+  .profile-form-cont .address-added-cont .address-check-cont{
+    margin-left: 0;
+  }
+  .hedding-cont .hero-hedding {
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+  .hedding-cont h3.hero-hedding {
+    margin-bottom: -12px !important;
+  }
+  .myac-alert-cont .btn-cont {
+    margin-left: auto;
+  }
+}
